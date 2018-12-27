@@ -35,7 +35,7 @@ var server = http.createServer(function(request, response){
     response.end()
   }else if(path === '/xxx'){
     response.statusCode = 200
-    response.setHeader('Content-Type','text/json')
+    response.setHeader('Content-Type','text/json;charset=utf-8')
     response.setHeader('Access-Control-Allow-Origin','http://localhost:8001')
     response.write(`
     {
